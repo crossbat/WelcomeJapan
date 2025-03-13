@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "JalnanGothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NoonnuBasicGothicRegular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SUIT-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* primary tags */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "SUIT-Regular";
+}
+
+/* navigation */
+#offcanvas_button {
+  background-color: rgba(225, 225, 225, 0.6);
+  border-radius: 0 0 10px 10px;
+}
+
+.offcanvas-top {
+  height: 220px !important;
+  background-color: rgba(225, 225, 225, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.widget-card {
+  height: 100%;
+  background-color: rgba(225, 225, 225, 1);
+  border-radius: 10px;
+  padding : 20px;
+}
+
+.exchange-card{
+  width: 200px;
+  height: 90%;
+  background-color: rgba(225, 225, 225, 1);
+  border-radius: 10px;
+}
+
+.col {
+  background-color: transparent;
+}
+
+.nav-brand {
+  width: 10vw;
+  height: 8vh;
+  background-color: rgba(225, 225, 225, 0.6);
+  border-radius: 10px;
+}
+
+.japan-flag {
+  width: 60px;
+}
+
+#exchangeMoney {
+  font-family: "JalnanGothic";
+  font-size: 1.8rem;
+}
+
+#oneyen {
+  font-family: "SUIT-Regular";
+  font-size: 1.3rem;
+  color: gray;
+}
+
+.navSwiper{
+  width: calc(100% - 387px);
+  height: 90%;
+  margin-left : 16px;
+  margin-right: 16px;
+}
+
+.nav-item {
+  padding-left: 20px;
+}
+
+.icon{
+  height: 80%;
+  width: 80%;
+  object-fit:cover;
+}
+
+.location > p{
+  font-family : 'JalnanGothic';
+  font-size : 27px;
+  padding-left: 20px !important;
+}
+
+.weather > p{
+  font-family : 'SUIT-Regular';
+  font-size : 40px;
+  padding-left:20px !important;
+}
+
+/* section 1 */
+#topPadding {
+  height: 260px;
+}
+
+#section1 {
+  background-image: url("../images/section1/section1.jpg");
+  background-size: cover;
+}
+
+#section1Main {
+  height: calc(100% - 150px);
+}
+
+#section1Gradient {
+  height: 150px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.mainText {
+  font-family: "JalnanGothic";
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.mainText > p {
+  margin-bottom: 1px;
+}
+
+.description {
+  font-family: "SUIT-Regular";
+  font-size: 20px;
+}
+
+.description > p {
+  margin-bottom: 1px;
+}
+
+/* section 2 */
+/* .mainText => section1 */
+/* .description => section1 */
+
+#section2Header {
+  height: 300px;
+}
+
+#section2Main {
+  height: calc(100% - 380px);
+}
+
+.Section2Swiper{
+  height: 85%;
+  width : 90%;
+}
+
+.board {
+  text-align: center;
+  border-radius: 12px;
+  background-color: transparent;
+  border-radius: 12px;
+  background-color: transparent;
+  flex-shrink: 0;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+}
+
+.cardImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: brightness(1);
+  transition: 0.3s ease-in-out;
+}
+
+.board:hover .cardImage {
+  filter: brightness(0.4);
+}
+
+.cardText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.6vw;
+  color : white;
+  font-family: "JalnanGothic";
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.board:hover .cardText {
+  opacity: 1;
+}
+
+#section2Footer {
+  height: 80px;
+}
+
+/* section 3 */
+#section3Header {
+  height: 300px;
+}
+
+#section3Main {
+  height: calc(100% - 290px);
+}
+/* section 3 Left */
+#section3Left {
+  width: 65%;
+}
+
+/* section3 Right */
+#section3Right {
+  width: 35%;
+}
+
+#map{
+  height: 90%;
+}
+
+.leaflet-control-layers-list{
+  width: 250px;
+}
+
+.section3Card{
+  height: 90%;
+  width: 80%;
+}
+
+.descriptionTitle{
+  font-family : "JalnanGothic";
+}
+
+.descriptionContent{
+  font-family : "SUIT-Regular";
+  font-size : 20px;
+}
+
+#section3Footer {
+  height: 80px;
+}
