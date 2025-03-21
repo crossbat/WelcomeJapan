@@ -108,29 +108,34 @@ body.position-relative(style="height:100vh;width:100vw;scroll-behavior:smooth;")
           a#sc3(href="#section3")
             span 뭘 해볼까요?
   section#section1.d-flex.flex-column
+    div#section1Gradient.w-100
     div#section1Main.w-100.d-flex.justify-content-center
       div.container-fluid.d-flex.flex-column.align-items-end.w-75.h-100
         div#topPadding.w-100
         div.w-100.d-flex.align-items-center
           div.w-100
-            div.mainText.pb-2
+            div#sec1MainText.mainText.pb-2
               p 떠나고 싶은 마음이 든다면,
               p 그게 바로 떠날 타이밍이에요.
-            div.description
+            div#sec1SubText.description
               p 언제 갈지 고민하고 있다면 이미 마음은 일본에 가 있지 않나요?
               p 이곳은 당신의 마음을 현실로 만들기 위한 곳이에요.
               p 더 이상 망설이지 말고, 지금 가장 설레이는 여행을 떠나보세요!
-    div#section1Gradient.w-100
+  section#section1Description.d-flex.justify-content-center.align-items-center.h-75.w-100
+    div#sec1Des.pb-1
+      p.text-center 일본에서 만나는 새로운 경험, 잊지 못할 순간들
+      p.text-center 지금까지 몰랐던 매력적인 여행지와 색다른 즐거움,
+      p.text-center 일본과 함께라면 당신의 여행이 특별해집니다.
   section#section2.d-flex.flex-column.align-items-center
     div#section2Header.w-75.d-flex.align-items-end
       div.w-100
-        div.mainText.pb-2
+        div#sec2MainText.mainText.pb-2
           p 이번 여행은 여기 어때요?
-        div.description
+        div#sec2SubText.description
           p 어디로 떠날지 고민되나요?
           p 당신의 여행지가 지금 정해질지 몰라요!
     div#section2Main.d-flex.justify-content-center.align-items-center.w-100
-      swiper-container.Section2Swiper.p-5(space-between='50', loop = 'true', autoplay = 'true', slides-per-view='3', centered-slides='true')
+      swiper-container.Section2Swiper.py-5(space-between='50', loop = 'true', autoplay = 'true', slides-per-view='5', centered-slides='true')
         swiper-slide.board
           img.cardImage(src = 'images/section2/webp/fukuoka.webp')
           p.cardText 후쿠오카
@@ -155,7 +160,7 @@ body.position-relative(style="height:100vh;width:100vw;scroll-behavior:smooth;")
         swiper-slide.board
           img.cardImage(src = 'images/section2/webp/yokohama.webp')
           p.cardText 요코하마
-    div#section2Footer.w-100
+    section#section2Footer.w-100
   section#section3.d-flex.flex-column.align-items-center
     div#section3Header.w-75.d-flex.align-items-end
       div.w-100
@@ -165,17 +170,17 @@ body.position-relative(style="height:100vh;width:100vw;scroll-behavior:smooth;")
           p 색다른 일본여행을 생각하고 계시다면
           p 지도에 있는 핀을 클릭해보세요!
     div#section3Main.d-flex.flex-row.w-100
-      div#section3Left.d-flex.h-100.justify-content-center.align-items-center
+      div#section3Left.d-flex.justify-content-center.align-items-center
         div#map.w-75.m-3.rounded-4.shadow-lg
-      div#section3Right.d-flex.h-100.rounded-4.justify-content-top.align-items-center
-        div.section3Card.shadow-lg
+      div#section3Right.d-flex.rounded-4.justify-content-top.align-items-center
+        div.section3Card.shadow-lg.rounded-5
           .d-flex.flex-column.w-100.h-100.p-4
-            img.descriptionImage.w-100.h-100.rounded-4.mb-3.object-fit-cover(src = '/images/section1/section1.jpg')
+            img.descriptionImage.w-100.h-50.rounded-4.mb-3.object-fit-cover(src = '/images/section1/section1.jpg')
             .section3description.w-100.h-100.rounded-4.pt-2.px-4
               p.descriptionTitle.fs-3 가보고 싶은 곳이 있나요?
               p.descriptionContent 왼쪽 지도에 있는 핀들을 클릭해보세요!
     div#section3Footer.w-100
-  
+  script(src=`/javascripts/pageAnimation.js`)
   script(src=`/javascripts/map.js`)
   script(src='/javascripts/mapClick.js')
   script(src=`/javascripts/script.js`)
