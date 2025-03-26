@@ -303,16 +303,35 @@ nav{
 #section3Main {
   height: calc(100% - 290px);
 }
+
+#sec3MainText{
+  opacity : 0;
+  transition : opacity ease-in-out 0.7s;
+  transition-delay : 1s;
+}
+
+#sec3SubText{
+  opacity : 0;
+  transition : opacity ease-in-out 0.7s;
+  transition-delay : 1.5s
+}
+
 /* section 3 Left */
 #section3Left {
   width: 65%;
   height : 630px;
+  opacity : 0;
+  transition : opacity ease-in-out 0.7s;
+  transition-delay : 2s;
 }
 
 /* section3 Right */
 #section3Right {
   width: 35%;
   height: 630px;
+  opacity : 0;
+  transition : opacity ease-in-out 0.7s;
+  transition-delay : 2.5s;
 }
 
 #map{

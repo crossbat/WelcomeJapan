@@ -23,10 +23,21 @@ observer.observe(sec1SubText);
 observer.observe(sec1Des);
 
 //section2
-const sec2MainText = document.querySelector('sec2MainText');
-const sec2SubText = document.querySelector('sec2SubText');
-const sec2Main = document.querySelector('section2Main');
+const sec2MainText = document.querySelector('#sec2MainText');
+const sec2SubText = document.querySelector('#sec2SubText');
+const sec2Main = document.querySelector('#section2Main');
 
 observer.observe(sec2MainText);
 observer.observe(sec2SubText);
 observer.observe(sec2Main);
+
+//section3
+const sec3MainText = document.querySelector('#sec3MainText');
+const sec3SubText = document.querySelector('#sec3SubText');
+const section3Left = document.querySelector('#section3Left');
+const section3Right = document.querySelector('#section3Right');
+
+observer.observe(sec3MainText);
+observer.observe(sec3SubText);
+observer.observe(section3Left);
+observer.observe(section3Right);
